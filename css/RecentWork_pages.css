@@ -1,0 +1,33 @@
+/* styles.css */
+.jumbotron {
+    position: relative;
+    background-image: url("assets/Brussels_Bank.png");
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    color: #fff;
+    padding: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.jumbotron h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px; /* Adjust as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+/* Custom class for left column text */
+.left-column-text {
+    /* Add your custom styles here */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Add any additional styles here */

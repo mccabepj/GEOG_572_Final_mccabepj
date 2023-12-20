@@ -1,0 +1,215 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: 'Inter Tight', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1b1b1c;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: #f6f4f4;
+    font-size: px;
+    font-weight: bold;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ebd122;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background-color: #2f2738;
+    border-radius: 4px;
+    border: 1px solid;
+    fill: #fff;
+    font-size: 16px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #ebd122;
+    color: #242424;
+    fill: #242424;
+    border-color: #fff;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url("../assets/Brussels_Bank.png");
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    color: #fff;
+    padding: 100px;
+    margin-top: 20px; /* Add margin-top to create space */
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+/* Quadrant Layout */
+.container {
+    padding-top: 20px; /* Add padding-top to create space between jumbotron and section below */
+    padding-bottom: 20px; /* Add padding-bottom for consistency */
+}
+
+/* Resume Section */
+.resume-section h3 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.resume-section h3:nth-child(1) {
+    color: #090909;
+}
+
+.resume-section h3:nth-child(2) {
+    color: #28a745;
+}
+
+.resume-section h3:nth-child(3) {
+    color: #dc3545;
+}
+
+.resume-section h3:nth-child(4) {
+    color: #ffc107;
+}
+
+.resume-section .education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-section .education-list li {
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-section .left-content {
+    font-size: 20px;
+}
+
+.resume-section .right-content {
+    font-size: 14px;
+    text-align: right; /* Align the text to the right */
+}
+
+.resume-section .right-content h4 {
+    margin: 0;
+    color: #6c6a6a;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #280852;
+}
+
+a:hover {
+    color: #ebd122;
+}
+
+
+a:hover {
+    color: #ebd122;
+}
+
+/* Add this code to your existing CSS file */
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: border 0.5s ease-in-out; /* Add transition for smooth effect */
+}
+
+.card:hover {
+    border: 10px solid #000; /* Add a thick black border on hover */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust the max-width for different screen sizes */
+.card-img-top {
+    max-width: 100%; /* Default max-width for all screen sizes */
+}
+
+/* Set the card height to auto, allowing it to adjust based on content height */
+.card {
+    height: 100%; /* Set height to 100% to fill the container */
+}
+
+
+
+/* Hover content */
+.hover-content {
+    display: none;
+}
+
+.card:hover .hover-content {
+    opacity: 0;
+}
+
+/* Navbar hide on scroll down */
+.navbar {
+    background-color: #1b1b1c;
+    border-radius: 0;
+    transition: top 0.5s;
+}
+
+.navbar-hidden {
+    top: -80px;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Maintain a 1:1 aspect ratio (adjust as needed) */
+    overflow: hidden;
+}
+
+.aspect-ratio img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

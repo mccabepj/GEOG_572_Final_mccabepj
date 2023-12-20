@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="maps, cartography" />
+    <title>Peter McCabe</title>
+
+    <!-- Bootstrap stylesheet links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .jumbotron {
+            position: relative;
+            background-image: url("assets/Brussels_Bank.png");
+            background-position: center;
+            background-size: cover;
+            text-align: left;
+            color: #fff;
+            padding: 100px;
+            margin-top: 0;
+            margin-bottom: 0;
+            border-radius: 0px;
+        }
+
+        .jumbotron h2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px; /* Adjust as needed */
+            font-size: 24px; /* Adjust the font size as needed */
+            font-weight: bold;
+            font-family: 'Inter Tight', sans-serif;
+        }
+
+        /* Custom class for left column text */
+        .left-column-text {
+            /* Add your custom styles here */
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+        .custom-image {
+            max-width: 100%; /* Ensures the image doesn't exceed its original size */
+            height: auto; /* Maintains the image's aspect ratio while scaling */
+            margin: 15px;
+            border: 2px solid #000; margin: 5px; /* Black border with 2px width */
+            border-radius: 1px; /* Optional: Add rounded corners */
+            
+        }
+
+        /* Dual-column layout for large screens */
+        @media (min-width: 992px) {
+            .custom-column {
+                width: 50%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Peter McCabe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <span class="menu"> Menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Recent</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="ThingsILike.html">Things I like</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Jumbotron -->
+   <div class="jumbotron text-center">
+        
+   </div>
+
+   <!-- Two-column layout for large screens -->
+   <div class="container">
+    <div class="row">
+        <!-- Left Column - 1 wide on small and medium screens, 2 wide on large screens -->
+        <div class="col-lg-8 col-md-12 custom-column">
+            <!-- Wrap the h2 with an anchor tag to make it a link -->
+            <a href="https://storymaps.arcgis.com/stories/7b595617f21246519a6da4c996a4bae5" class="custom-text-box">
+                <h2>ESRI 'Map Tour': <br> H Street Marathon</h2>
+            </a>
+            <!-- Override p styles inline -->
+            <p class="left-column-text custom-text-box"> This project was an opportunity to experiment with and explore the development of a map for other users to use. Under the assignment criteria, I decided that the Streetcar running along H St NE in DC would be a fun setting. While developing the map tour concept, I also realized that it was 13 blocks in each direction, and thought it was appropriate to consider this a 'marathon' of some sort.</p>
+        </div>
+
+        <!-- Right Column - 1 wide on small and medium screens, 2 wide on large screens -->
+        <div class="col-lg-4 col-md-12 custom-column">
+            <!-- Image with embedded link -->
+            <a href="https://storymaps.arcgis.com/stories/7b595617f21246519a6da4c996a4bae5">
+                <img src="assets\maptour_screenshot.png" alt="Image Description" class="custom-image">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Add your content here -->
+
+<!-- Footer or additional sections can be added as needed -->
+
+<!-- Bootstrap JS and any additional scripts can be added at the end of the body -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Add any additional scripts if needed -->
+</body>
+
+</html>
